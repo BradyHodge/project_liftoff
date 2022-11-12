@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: bradyhodge.com
+Token: 94a4dad38c4ffa7da9925fb5f955b58ac0c49430437a069dcc97ba44f658156d
