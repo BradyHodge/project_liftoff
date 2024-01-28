@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <!-- Hello! 👈(ﾟヮﾟ👈) -->
+</head>
+<body>
+    <div id="container">
+        <h1>CSS Combinators</h1>
+        <div class="box" id="box1">
+            Box 1
+            <div class="box" id="box2">
+                Box 2
+                <div class="box" id="box3">Box 3</div>
+            </div>
+            <div class="box" id="box4">Box 4</div>
+        </div>
+        <div class="box" id="box5">Box 5</div>
+
+        <div class="combinator-controls">
+            <button id="descendant-button" onclick="applyStyle('descendant')">Descendant</button>
+            <button id= "child-button" onclick="applyStyle('child')">Child</button>
+            <button id="adjacent-button" onclick="applyStyle('adjacent')">Adjacent Sibling</button>
+            <button id="general-button" onclick="applyStyle('general')">General Sibling</button>
+        </div>
+        <div id="active-combinator" style="margin-top: 20px; font-weight: bold;">None</div>
+    </div>
+</body>
+</html>

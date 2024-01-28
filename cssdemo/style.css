@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#container {
+    text-align: center;
+}
+
+.box {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+
+.highlight1 {
+    background-color:  lightblue;
+}
+.highlight2 {
+    background-color: lightgreen;
+}
+.highlight3 {
+    background-color: lightcoral;
+}
+.highlight4 {
+    background-color: lightseagreen;
+}
+
+
+.combinator-controls button {
+    margin: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
