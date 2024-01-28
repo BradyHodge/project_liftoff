@@ -17,11 +17,11 @@ function applyStyle(combinator) {
             combinatorDisplay.textContent = '#box1 > .box';
             break;
         case 'adjacent':
-            document.querySelectorAll('#box2 + .box').forEach(element => {
+            document.querySelectorAll('#box1 + .box').forEach(element => {
                 element.classList.add('highlight3');
             });
             document.querySelector('#adjacent-button').classList.add('highlight3');
-            combinatorDisplay.textContent = '#box2 + .box';
+            combinatorDisplay.textContent = '#box1 + .box';
             break;
         case 'general':
             document.querySelectorAll('#box1 ~ .box').forEach(element => {
