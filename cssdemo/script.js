@@ -7,28 +7,28 @@ function applyStyle(combinator) {
                 element.classList.add('highlight1');
             });
             document.querySelector('#descendant-button').classList.add('highlight1');
-            combinatorDisplay.textContent = '#box1 .box';
+            combinatorDisplay.textContent = '#box1 .box {background-color: lightblue;}';
             break;
         case 'child':
             document.querySelectorAll('#box1 > .box').forEach(element => {
                 element.classList.add('highlight2');
             });
             document.querySelector('#child-button').classList.add('highlight2');
-            combinatorDisplay.textContent = '#box1 > .box';
+            combinatorDisplay.textContent = '#box1 > .box {background-color: lightgreen;}';
             break;
         case 'adjacent':
             document.querySelectorAll('#box1 + .box').forEach(element => {
                 element.classList.add('highlight3');
             });
             document.querySelector('#adjacent-button').classList.add('highlight3');
-            combinatorDisplay.textContent = '#box1 + .box';
+            combinatorDisplay.textContent = '#box1 + .box {background-color: lightcoral;}';
             break;
         case 'general':
             document.querySelectorAll('#box1 ~ .box').forEach(element => {
                 element.classList.add('highlight4');
             });
             document.querySelector('#general-button').classList.add('highlight4');
-            combinatorDisplay.textContent = '#box1 ~ .box';
+            combinatorDisplay.textContent = '#box1 ~ .box {background-color: lightseagreen;}';
             break;
         
     }
